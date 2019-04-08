@@ -12,7 +12,7 @@ import { Navigation } from 'react-native-navigation';
 import { get } from 'lodash';
 import Config from 'react-native-config';
 
-import { pushTutorialScreen } from 'src/navigation';
+import { pushWellcomeScreen } from 'src/navigation';
 import { connectData } from 'src/redux';
 
 const styles = StyleSheet.create({
@@ -36,7 +36,7 @@ class SingleAppScreen extends PureComponent {
 
     switch (buttonId) {
       case 'nav_logout_btn': {
-        pushTutorialScreen();
+        pushWellcomeScreen();
         break;
       }
       case 'nav_user_btn': {

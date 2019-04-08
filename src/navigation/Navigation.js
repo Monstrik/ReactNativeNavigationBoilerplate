@@ -13,17 +13,17 @@ import registerScreens from './registerScreens';
 // Register all screens on launch
 registerScreens();
 
-export function pushTutorialScreen() {
+export function pushWellcomeScreen() {
   Navigation.setDefaultOptions({
     topBar: {
       background: {
-        color: '#039893'
+        color: '#ff0000'
       },
       title: {
         color: 'white',
       },
       backButton: {
-        title: '', // Remove previous screen name from back button
+        title: 'Back', // Remove previous screen name from back button
         color: 'white'
       },
       buttonColor: 'white',

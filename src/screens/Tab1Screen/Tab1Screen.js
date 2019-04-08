@@ -11,8 +11,9 @@ import {
 import { Navigation } from 'react-native-navigation';
 import { get } from 'lodash';
 
-import { pushTutorialScreen } from 'src/navigation';
+import { LOGIN_SCREEN, pushWellcomeScreen } from 'src/navigation';
 import { connectData } from 'src/redux';
+import { Button } from 'react-native-elements';
 
 const styles = StyleSheet.create({
   flex: {
@@ -27,7 +28,8 @@ class Tab1Screen extends PureComponent {
   constructor(props) {
     super(props);
 
-    Navigation.events().bindComponent(this);
+    Navigation.events()
+      .bindComponent(this);
   }
 
   navigationButtonPressed({ buttonId }) {
@@ -35,7 +37,7 @@ class Tab1Screen extends PureComponent {
 
     switch (buttonId) {
       case 'nav_logout_btn': {
-        pushTutorialScreen();
+        pushWellcomeScreen();
         break;
       }
       case 'nav_user_btn': {
@@ -47,12 +49,37 @@ class Tab1Screen extends PureComponent {
     }
   }
 
+  handleAction(screen) {
+    Navigation.push(this.props.componentId, {
+      component: {
+        name: LOGIN_SCREEN,
+        passProps: {
+          screen
+        },
+        options: {
+          topBar: {
+            title: {
+              text: 'LOG-IN'
+            }
+          }
+        }
+      }
+    });
+  }
+
   render() {
     return (
       <View style={styles.flex}>
-        <Text style={{ fontSize: 18, fontWeight: 'bold' }}>
+        <Text style={{
+          fontSize: 18,
+          fontWeight: 'bold'
+        }}>
           Play top buttons!
         </Text>
+        <Button
+          onPress={() => this.handleAction('Single')}
+          title={'Start Single Screen App 1'}
+        />
       </View>
     );
   }

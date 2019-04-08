@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   button: {
-    backgroundColor: '#039893',
+    backgroundColor: 'black',
     width: 230,
     marginTop: 30,
     borderRadius: 25
@@ -52,7 +52,7 @@ class WelcomeScreen extends PureComponent {
         options: {
           topBar: {
             title: {
-              text: 'LOGIN'
+              text: 'LOG-IN'
             }
           }
         }
@@ -72,7 +72,7 @@ class WelcomeScreen extends PureComponent {
         </SFProDisplayMedium>
         <Button
           onPress={() => this.handleGetStartAction('Single')}
-          title={'Start Single Screen App'}
+          title={'Start Single Screen App 1'}
           buttonStyle={styles.button}
           titleStyle={styles.buttonTitle}
         />
