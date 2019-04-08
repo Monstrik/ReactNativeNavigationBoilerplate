@@ -1,13 +1,14 @@
 <h1 align="center">
   <img src="logo.png"/><br>
-  React Native Navigation + Redux + Saga
+  React Native + Navigation + Redux + Saga
 </h1>
 
 A starter boilerplate for a mobile app using React Native and React Native Navigation(v2). This boilerplate also provides a cool redux-saga structure to bootstrap your react-native app development.
 
-## Screenshots
+<!-- ## Screenshots -->
 
-<img src="https://user-images.githubusercontent.com/17483938/51156806-e7c9f480-1885-11e9-8b4e-f079f7200da5.png" /><br>
+<!-- <img src="https://user-images.githubusercontent.com/17483938/51156806-e7c9f480-1885-11e9-8b4e-f079f7200da5.png" /> -->
+<!-- <br> -->
 
 ## Requirements
 Before start, make sure you installed:
@@ -33,8 +34,8 @@ Before start, make sure you installed:
 
 Clone the repo and install packages.
 ```shell
-$ git clone https://github.com/atoami/react-native-navigation-redux-starter-kit ReactNativeBoilerplate
-$ cd ReactNativeBoilerplate
+$ git clone
+$ cd
 $ yarn
 ```
 
