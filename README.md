@@ -1,14 +1,22 @@
 <h1 align="center">
-  <img src="logo.png"/><br>
   React Native + Navigation + Redux + Saga
 </h1>
 
-A starter boilerplate for a mobile app using React Native and React Native Navigation(v2). This boilerplate also provides a cool redux-saga structure to bootstrap your react-native app development.
+# FDNY 
+### Changes
+"react-native": "0.57.8" - for windows
 
-<!-- ## Screenshots -->
+ 
+# Original
+A starter boilerplate for a mobile app using 
+React Native and React Native Navigation(v2). 
+This boilerplate also provides a cool redux-saga structure 
+to bootstrap your react-native app development.
 
-<!-- <img src="https://user-images.githubusercontent.com/17483938/51156806-e7c9f480-1885-11e9-8b4e-f079f7200da5.png" /> -->
-<!-- <br> -->
+## Screenshots
+
+<img src="https://user-images.githubusercontent.com/17483938/51156806-e7c9f480-1885-11e9-8b4e-f079f7200da5.png" />
+<br>
 
 ## Requirements
 Before start, make sure you installed:
